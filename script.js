@@ -73,11 +73,12 @@ function displayMessages(messages) {
 
 // Example Usage
 document.addEventListener("DOMContentLoaded", () => {
-  // Example encrypted messages
+  // Example encrypted messages (with four messages now)
   const encryptedMessages = [
     { date: "2023-10-01", content: "Dwwdfn dw gdz!" },
     { date: "2023-09-30", content: "Ol gh fhfob gzud xmd!" },
     { date: "2023-10-02", content: "Wklv lv dq hqfubswlrq!" },
+    { date: "2023-10-03", content: "Xli syx mr wxit hmpp!" }
   ];
 
   const shift = 3; // Example shift for Caesar's cipher
