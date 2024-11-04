@@ -50,8 +50,9 @@ function storeMessages(messages) {
 function displayMessages(messages) {
   const messageContainer = document.getElementById("message-container");
   messageContainer.innerHTML = ""; // Clear existing messages
+
   messages.forEach(msg => {
-    const messageItem = document.createElement("div");
+    const messageItem = document.createElement("li");
     messageItem.classList.add("message-item");
 
     const dateElement = document.createElement("p");
@@ -67,6 +68,7 @@ function displayMessages(messages) {
     messageContainer.appendChild(messageItem);
   });
 }
+
 
 
 // Example Usage
