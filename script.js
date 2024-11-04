@@ -48,8 +48,8 @@ function storeMessages(messages) {
 
 // Display Messages Function (For the UI)
 function displayMessages(messages) {
-  const messageList = document.getElementById("message-list");
-  messageList.innerHTML = "";
+  const messageContainer = document.getElementById("message-container");
+  messageContainer.innerHTML = ""; // Clear existing messages
   messages.forEach(msg => {
     const messageItem = document.createElement("div");
     messageItem.classList.add("message-item");
@@ -64,9 +64,10 @@ function displayMessages(messages) {
 
     messageItem.appendChild(dateElement);
     messageItem.appendChild(contentElement);
-    messageList.appendChild(messageItem);
+    messageContainer.appendChild(messageItem);
   });
 }
+
 
 // Example Usage
 document.addEventListener("DOMContentLoaded", () => {
